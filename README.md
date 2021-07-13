@@ -1,24 +1,23 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+#使用バージョン一覧
 
-* Ruby version
+* Ruby version: 2.5.3
+* mysql version: 8.0
+* rails version: 2.5.3
 
-* System dependencies
+#環境構築手順
 
-* Configuration
+(dockerは入っている前提です。入ってない場合はダウンロード →https://www.docker.com/)
 
-* Database creation
+$ git clone 
+↓
+$ docker-compose build 　                  # コンテナをビルド
+↓
+$ docker-compose -d up   　　　　　　　　　　 # コンテナの一斉起動
+↓
+$ docker-compose run web rails db:create 　# db作成
 
-* Database initialization
+#参考にしたサイト
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://qiita.com/azul915/items/5b7063cbc80192343fc0
