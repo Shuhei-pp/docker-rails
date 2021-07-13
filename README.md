@@ -4,8 +4,19 @@
 
 * Ruby version: 2.5.3
 * mysql version: 8.0
-* rails version: 2.5.3
+* rails version: 5.2.6
 
+# ディレクトリ構造
+
+.  
+├docker-compose.yml  
+├dockerfile  
+├initdb.d┐  
+┃　　　　├init.sql  
+├app-  
+├bin-  
+├config-  
+ 
 # 環境構築手順
 
 ( *dockerは入っている前提です。* 入ってない場合はダウンロード →https://www.docker.com/)
